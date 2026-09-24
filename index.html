@@ -360,7 +360,7 @@ footer .copyright { font-size: 0.85em; margin-top: 16px; }
   </div>
   <svg viewBox="0 0 1200 560" role="img" aria-labelledby="scene-title scene-desc" preserveAspectRatio="xMidYMax meet">
     <title id="scene-title">The three layers of the Physical Internet</title>
-    <desc id="scene-desc">An airplane crosses the sky and a freight train crosses the horizon: the high-speed layer. Solar-powered JPods pods hang from a slim elevated guideway: the middle mile. Below, people walk and bike on a street lined with trees and shops: the last mile.</desc>
+    <desc id="scene-desc">An airplane crosses the sky and a heavy-lift freight train crosses the horizon: the high-speed layer. Solar-powered JPods pods hang from a slim elevated guideway: the middle mile. Below, people walk and bike on a street lined with trees and shops, close to where they live: the last mile.</desc>
     <defs>
       <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
         <stop offset="0" stop-color="#cfe9f7"/>
@@ -393,11 +393,11 @@ footer .copyright { font-size: 0.85em; margin-top: 16px; }
 
     <!-- sky, sun -->
     <rect width="1200" height="500" fill="url(#sky)"/>
-    <circle cx="1010" cy="110" r="52" fill="#fff4c7"/>
+    <circle cx="1110" cy="70" r="46" fill="#fff4c7"/>
 
     <!-- HIGH SPEED: airplane -->
-    <rect x="-40" y="93" width="310" height="4" rx="2" fill="url(#trail)"/>
-    <g transform="translate(330 95)" fill="#475569">
+    <rect x="600" y="93" width="270" height="4" rx="2" fill="url(#trail)"/>
+    <g transform="translate(930 95)" fill="#475569">
       <path d="M-60 -3L48 -5Q68 0 48 5L-60 3Z"/>
       <path d="M2 -2L-20 -34h11L22 -2Z"/>
       <path d="M2 2L-20 34h11L22 2Z"/>
@@ -490,12 +490,12 @@ footer .copyright { font-size: 0.85em; margin-top: 16px; }
     <!-- LAST MILE: the street belongs to people -->
     <rect x="0" y="500" width="1200" height="60" fill="#e7dfd3"/>
     <path d="M0 500H1200" stroke="#cfc4b4" stroke-width="3"/>
-    <use href="#walker"  transform="translate(88 548)"  style="color:#7c3aed"/>
-    <use href="#walker"  transform="translate(112 548)" style="color:#0f766e"/>
-    <use href="#cyclist" transform="translate(220 548)" style="color:#b45309"/>
-    <use href="#walker"  transform="translate(318 548)" style="color:#be185d"/>
-    <use href="#walker"  transform="translate(340 548) scale(0.68)" style="color:#d97706"/>
-    <use href="#cyclist" transform="translate(800 548)" style="color:#0f766e"/>
+    <use href="#walker"  transform="translate(540 548)" style="color:#7c3aed"/>
+    <use href="#walker"  transform="translate(564 548)" style="color:#0f766e"/>
+    <use href="#cyclist" transform="translate(646 548)" style="color:#b45309"/>
+    <use href="#walker"  transform="translate(728 548)" style="color:#be185d"/>
+    <use href="#walker"  transform="translate(750 548) scale(0.68)" style="color:#d97706"/>
+    <use href="#cyclist" transform="translate(828 548)" style="color:#0f766e"/>
     <g>
       <path d="M912 470h60l-30 -14z" fill="#16a34a"/>
       <rect x="941" y="470" width="2" height="60" fill="#475569"/>
@@ -508,12 +508,12 @@ footer .copyright { font-size: 0.85em; margin-top: 16px; }
 
     <!-- layer labels -->
     <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" letter-spacing="2" fill="#fff" text-anchor="middle">
-      <rect x="430" y="77" width="440" height="36" rx="18" fill="#1e293b"/>
-      <text x="650" y="101">HIGH SPEED · AIR &amp; FREIGHT RAIL</text>
-      <rect x="30" y="170" width="290" height="36" rx="18" fill="#16a34a"/>
-      <text x="175" y="194">MIDDLE MILE · JPODS</text>
-      <rect x="398" y="512" width="340" height="36" rx="18" fill="#d97706"/>
-      <text x="568" y="536">LAST MILE · WALK &amp; BIKE</text>
+      <rect id="lbl-high-bg" x="30" y="77" width="544" height="36" rx="18" fill="#1e293b"/>
+      <text id="lbl-high" x="302" y="101">HIGH SPEED · AIR &amp; HEAVY LIFT FREIGHT RAIL</text>
+      <rect id="lbl-mid-bg" x="30" y="170" width="298" height="36" rx="18" fill="#16a34a"/>
+      <text id="lbl-mid" x="179" y="194">MIDDLE MILE · JPODS</text>
+      <rect id="lbl-last-bg" x="30" y="512" width="460" height="36" rx="18" fill="#d97706"/>
+      <text id="lbl-last" x="260" y="536">LAST MILE · WALK, BIKE &amp; PROXIMITY</text>
     </g>
   </svg>
 </header>
