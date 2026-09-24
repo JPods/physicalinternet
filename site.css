@@ -134,27 +134,6 @@ section p.lead {
 .card h3 { font-size: 1.15em; font-weight: 600; margin-bottom: 10px; }
 .card p { font-size: 0.95em; line-height: 1.6; }
 
-/* ── Catalyst timeline ── */
-.catalyst {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 12px;
-  margin: 32px 0;
-}
-.cat-era {
-  background: #fff;
-  border: 2px solid #e0e0e0;
-  border-radius: 10px;
-  padding: 18px 12px;
-  text-align: center;
-  transition: border-color 0.15s, transform 0.15s;
-}
-.cat-era:hover { border-color: #16a34a; transform: translateY(-2px); }
-.cat-era .transport { font-weight: 700; font-size: 0.95em; color: #0a2a1a; margin-bottom: 4px; }
-.cat-era .arrow-down { color: #16a34a; font-size: 1.2em; margin: 4px 0; }
-.cat-era .energy { font-size: 0.85em; color: #16a34a; font-weight: 600; }
-.cat-era.current { border-color: #16a34a; background: #f0fdf4; }
-
 /* ── Stats row ── */
 .stats {
   display: flex;
@@ -340,7 +319,6 @@ footer .copyright { font-size: 0.85em; margin-top: 16px; }
   .container, .wide { padding: 0 16px; }
   .layers { grid-template-columns: 1fr; }
   .parallel { grid-template-columns: 1fr; }
-  .catalyst { grid-template-columns: repeat(3, 1fr); }
   .cta-links { flex-direction: column; align-items: center; }
   .stats { gap: 28px; }
   .ne-bar .ne-label { width: 80px; font-size: 0.8em; }
