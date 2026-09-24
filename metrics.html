@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metrics — Physical Internet®</title>
+<meta name="description" content="The numbers behind the Physical Internet: energy per passenger-mile, the cost of traffic, tax revenue per acre, road safety and walkability.">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<nav class="topnav" aria-label="Site">
+  <div class="inner">
+    <a class="brand" href="index.html">Physical <span>Internet</span>&reg;</a>
+    <div class="links">
+      <a href="index.html">Three Layers</a>
+      <a href="metrics.html" aria-current="page">Metrics</a>
+      <a href="landuse.html">Land Use</a>
+      <a href="https://primelawofnetworks.com">Prime Law of Networks</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="eyebrow">Physical Internet&reg; &middot; Metrics</div>
+    <h1>Measure what moving a person costs.</h1>
+    <p>Energy, money, land and lives. Each number below has its source beside it. The pattern is the same in every column: moving a person in a 2-ton vehicle is the most expensive way there is.</p>
+  </div>
+</header>
+
+<!-- ════════ ENERGY ════════ -->
+<section>
+  <div class="container">
+    <h2>Energy per <span>Passenger-Mile</span></h2>
+    <p class="lead">Watt-hours to move one person one mile. Lower is better.</p>
+    <div class="hbars">
+      <div class="hbar"><div class="lbl">Bike</div><div class="track"><div class="fill" style="width:0.8%"></div></div><div class="val">15</div></div>
+      <div class="hbar hl"><div class="lbl">JPods</div><div class="track"><div class="fill" style="width:1.9%"></div></div><div class="val">78</div></div>
+      <div class="hbar"><div class="lbl">Walking</div><div class="track"><div class="fill" style="width:2.8%"></div></div><div class="val">116</div></div>
+      <div class="hbar"><div class="lbl">Motorcycle</div><div class="track"><div class="fill" style="width:13.0%"></div></div><div class="val">545</div></div>
+      <div class="hbar"><div class="lbl">Commuter rail</div><div class="track"><div class="fill" style="width:21.0%"></div></div><div class="val">881</div></div>
+      <div class="hbar"><div class="lbl">Car</div><div class="track"><div class="fill" style="width:24.5%"></div></div><div class="val">1,032</div></div>
+      <div class="hbar"><div class="lbl">Bus</div><div class="track"><div class="fill" style="width:29.6%"></div></div><div class="val">1,245</div></div>
+      <div class="hbar"><div class="lbl">Taxi</div><div class="track"><div class="fill" style="width:100.0%"></div></div><div class="val">4,204</div></div>
+    </div>
+    <p class="source">Wh per passenger-mile. Source: US DOE Transportation Energy Data Book (Oak Ridge National Laboratory), ch. 2; bikes: CycleVolta; JPods: design figure.</p>
+
+    <div class="parallel" style="margin-top:28px">
+      <div class="card card-light">
+        <h3>188&times;</h3>
+        <p>Freight rail moves a ton of goods 470 miles on one gallon of fuel (Warren Buffett, BNSF). A 200-pound person in a 25-mpg car moves a tenth of a ton 25 miles per gallon: 2.5 ton-miles. 470 &divide; 2.5 = 188.</p>
+      </div>
+      <div class="card card-dark">
+        <h3>Packet size is the waste</h3>
+        <p>Most of the energy a car burns moves the car, not the person. The Parasitic Energy Ratio compares the mass moved and the stops made per passenger. The smaller the packet, the less energy is wasted.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:32px">Parasitic Energy Ratio</h3>
+    <div class="hbars">
+      <div class="hbar"><div class="lbl">Car</div><div class="track"><div class="fill" style="width:79.6%"></div></div><div class="val">144.4</div></div>
+      <div class="hbar"><div class="lbl">Bus</div><div class="track"><div class="fill" style="width:71.5%"></div></div><div class="val">129.7</div></div>
+      <div class="hbar"><div class="lbl">Light rail</div><div class="track"><div class="fill" style="width:100.0%"></div></div><div class="val">181.4</div></div>
+      <div class="hbar"><div class="lbl">Bike</div><div class="track"><div class="fill" style="width:0.8%"></div></div><div class="val">1.1</div></div>
+      <div class="hbar hl"><div class="lbl">JPods</div><div class="track"><div class="fill" style="width:1.5%"></div></div><div class="val">2.8</div></div>
+    </div>
+    <p class="source">Stops &times; vehicle mass per passenger &divide; 90&thinsp;kg. Lower is better. Method and inputs: <a href="https://library.jpods.com/metrics/">library.jpods.com/metrics</a>.</p>
+  </div>
+</section>
+
+<!-- ════════ COST OF TRAFFIC ════════ -->
+<section>
+  <div class="container">
+    <h2>The Cost of <span>Traffic</span></h2>
+    <p class="big-line">$2.76 trillion a year. <em>69% of it in cities.</em></p>
+    <table class="comp-table">
+      <thead><tr><th>Cost</th><th>$ per year</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td>Crashes</td><td>$871B</td><td>NHTSA, via PBS</td></tr>
+        <tr><td>Oil</td><td>$756B</td><td>EIA</td></tr>
+        <tr><td>Land for roads and parking</td><td>$723B</td><td><a href="landuse.html">Land Use</a>, at $1 per sq ft</td></tr>
+        <tr><td>Congestion</td><td>$305B</td><td>CityLab</td></tr>
+        <tr><td>Car damage from bad roads</td><td>$109B</td><td>CNBC</td></tr>
+        <tr class="highlight"><td>Total</td><td>$2.76T</td><td></td></tr>
+      </tbody>
+    </table>
+
+    <div class="stats">
+      <div class="stat"><div class="number">95%</div><div class="label">of the time a car<br>sits parked (MIT Senseable)</div></div>
+      <div class="stat"><div class="number">85%</div><div class="label">of car spending leaves<br>the local economy (Speck)</div></div>
+      <div class="stat"><div class="number">$5,262&ndash;$10,728</div><div class="label">a year per car<br>(Move.org; AAA 2022)</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ PER ACRE ════════ -->
+<section id="per-acre">
+  <div class="container">
+    <h2>Tax Revenue per <span>Acre</span></h2>
+    <p class="big-line">Walkable places pay the city's bills. <em>Parking lots don't.</em></p>
+    <p class="lead">Measure a store by what it pays per acre of city land, not per store, and the ranking flips. The big box with its parking lot uses the most land and returns the least.</p>
+  </div>
+  <div class="wide">
+    <figure class="figure">
+      <a href="img/lu/value-per-acre-asheville.jpg"><img src="img/lu/value-per-acre-asheville.jpg" width="1200" height="856" loading="lazy" alt="A big-box store on 34 acres paying $6.5k property tax per acre, against a six-story downtown building on 0.2 acres paying $634k per acre"></a>
+      <figcaption>Asheville, NC. A big-box store on 34 acres pays $6.5k in property tax per acre, with 0 residents and 6 jobs per acre. A six-story downtown building on 0.2 acres pays $634k per acre, with 90 residents and 74 jobs per acre. Analysis: Urban3.</figcaption>
+    </figure>
+    <div class="pair">
+      <figure class="figure" style="margin:0">
+        <a href="img/lu/tax-per-acre-edmond.jpg"><img src="img/lu/tax-per-acre-edmond.jpg" width="1200" height="731" loading="lazy" alt="A taco shop on 0.12 acres producing $510,000 tax revenue per acre, against a Target on 15.5 acres producing $144,500 per acre"></a>
+        <figcaption>Edmond, OK. A taco shop on 0.12 acres: $510,000 tax revenue and 250 jobs per acre. A Target on 15.5 acres: $144,500 and 6.4 jobs per acre.</figcaption>
+      </figure>
+      <figure class="figure" style="margin:0">
+        <a href="img/lu/brainerd-tax-base.jpg"><img src="img/lu/brainerd-tax-base.jpg" width="1067" height="641" loading="lazy" alt="Brainerd, Minnesota: a row of small old shops valued at $1,136,500 beside a fast-food parcel valued at $803,200"></a>
+        <figcaption>Brainerd, MN. A row of small old shops called &ldquo;blighted&rdquo; is valued at $1,136,500; the fast-food parcel beside it at $803,200.<span class="credit">Image: Not Just Bikes</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ WALKABILITY PAYS ════════ -->
+<section>
+  <div class="container">
+    <h2>Walkability <span>Pays</span></h2>
+    <div class="stats">
+      <div class="stat"><div class="number">1.2%</div><div class="label">of land in the 35 largest US cities<br>is walkable (WEF)</div></div>
+      <div class="stat"><div class="number">20%</div><div class="label">of GDP comes from<br>that 1.2%</div></div>
+      <div class="stat"><div class="number">35&ndash;45%</div><div class="label">rent and price premium<br>for walkable places (CNU 2023)</div></div>
+      <div class="stat"><div class="number">$500&ndash;$3,000</div><div class="label">home value per<br>Walk Score point (Climate Reality)</div></div>
+    </div>
+    <p>In Arlington, Virginia, 10% of the land now produces more than half of the county's tax revenue, up from 20% (World Economic Forum). The demand for walkable places is far larger than the supply. The Physical Internet&reg; makes more of them: every station is a new walkable center.</p>
+  </div>
+</section>
+
+<!-- ════════ SAFETY ════════ -->
+<section class="dark-section">
+  <div class="container">
+    <h2>The Cost in <span>Lives</span></h2>
+    <div class="stats">
+      <div class="stat"><div class="number" style="color:#fff">40,100</div><div class="label" style="color:#b8c4bc">killed on US roads<br>in 2017</div></div>
+      <div class="stat"><div class="number" style="color:#fff">11,200</div><div class="label" style="color:#b8c4bc">serious injuries per million<br>on roads (DOT)</div></div>
+      <div class="stat"><div class="number" style="color:#4ade80">3.7</div><div class="label" style="color:#b8c4bc">per million under amusement-ride<br>standards (ASTM F24)</div></div>
+    </div>
+    <p class="lead">Per 100 million kilometers walked (2016&ndash;2018), 11.2 Americans are killed, against 1.1 in the Netherlands and 1.7 in Denmark. Per 100 million kilometers biked, 6.0 against 0.9 and 0.9. The difference is road policy. See how Sweden and Denmark changed it on the <a href="index.html#wrong-layer" style="color:#4ade80">home page</a>.</p>
+    <p class="source" style="color:#8a9a90">Fatality rates: Ralph Buehler &amp; John Pucher, <em>Transport Reviews</em> 41(1), 2021. Serious injuries: Statista/DOT; ASTM F24 comparison: <a href="https://library.jpods.com/metrics/" style="color:#8a9a90">library.jpods.com/metrics</a>.</p>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Where the Land Went</h2>
+    <p class="lead">Neighborhoods paved for freeways, downtowns turned into parking, and the cities that took their streets back.</p>
+    <div class="cta-links">
+      <a href="landuse.html" class="btn-primary">Land Use</a>
+      <a href="index.html" class="btn-secondary">The Three Layers</a>
+      <a href="https://primelawofnetworks.com" class="btn-secondary">Prime Law of Networks</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ FOOTER ════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-tagline">Physical Internet&reg; &mdash; Moving atoms like we move bits.</div>
+    <div class="footer-links">
+      <a href="https://jpods.com">JPods</a>
+      <a href="https://virtual-inventory.com">Virtual Inventory</a>
+      <a href="https://webclerk.com">WebClerk</a>
+      <a href="https://personalizetransit.com">Personalize Transit</a>
+      <a href="https://jpods3d.com">JPods3D</a>
+      <a href="https://primelawofnetworks.com">Prime Law</a>
+      <a href="https://10xmakers.com">10xMakers</a>
+      <a href="https://meshmobility.com">MeshMobility</a>
+      <a href="https://dividedsovereignty.com">Divided Sovereignty</a>
+    </div>
+    <div class="copyright">&copy; 2026 JPods, LLC. Solar-powered mobility, locally governed.</div>
+  </div>
+</footer>
+
+</body>
+</html>
