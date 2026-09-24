@@ -300,10 +300,13 @@ footer .copyright { font-size: 0.85em; margin-top: 16px; }
   text-transform: uppercase; color: var(--band-ink); background: var(--band);
   padding: 3px 10px; border-radius: 4px; margin-bottom: 8px;
 }
-.layer-row h3 { font-size: 1.35em; color: #0a2a1a; margin-bottom: 2px; }
+.layer-row h3 { font-size: 1.35em; line-height: 1.3; color: #0a2a1a; margin-bottom: 4px; }
 .layer-row .analog { font-size: 0.85em; color: #6a6a7a; margin-bottom: 10px; }
 .layer-row p { font-size: 0.95em; line-height: 1.6; }
 .layer-row img { width: 100%; height: auto; max-height: 380px; object-fit: cover; border-radius: 8px; display: block; }
+.corner-stores { display: grid; grid-template-columns: 1.6fr 1fr; gap: 10px; }
+.corner-stores img { height: 300px !important; max-height: none !important; object-fit: cover; }
+.corner-stores a:last-child img { object-position: center 78%; }
 .band-high { --band: #14532d; --band-ink: #fff; }
 .band-mid  { --band: #16a34a; --band-ink: #fff; }
 .band-last { --band: #14532d; --band-ink: #fff; }
@@ -340,6 +343,7 @@ footer .copyright { font-size: 0.85em; margin-top: 16px; }
   .scene-hero .tagline { font-size: 1.05em; padding: 0 16px; }
   .layer-row { grid-template-columns: 1fr; padding: 18px; }
   .pair { grid-template-columns: 1fr; }
+  .corner-stores img { height: 220px !important; }
   .big-line { font-size: 1.45em; }
   .container, .wide { padding: 0 16px; }
   .layers { grid-template-columns: 1fr; }
@@ -557,11 +561,15 @@ footer .copyright { font-size: 0.85em; margin-top: 16px; }
       <div class="layer-row band-last">
         <div>
           <span class="tag">Last Mile</span>
-          <h3>Safe to walk and bike</h3>
+          <h3>Safe to walk and bike with increased proximity to retail</h3>
           <div class="analog">Internet: Bluetooth</div>
           <p>Walking, bikes, cargo bikes, scooters, local use vehicles. When stations are a 7-minute bike ride or a 15-minute walk away, and 2-ton vehicles are no longer on the street, the last mile is safe again. Parcels arrive at a neighborhood station and go the last few blocks by cargo bike.</p>
+          <p style="margin-top:10px">Safe streets bring shops back within walking distance: the corner store, the caf&eacute;, the neighborhood retailer. Commerce returns to the pace of people on foot.</p>
         </div>
-        <a href="img/DHL_UPS-FedEx_CargoBike.jpg"><img src="img/DHL_UPS-FedEx_CargoBike.jpg" width="932" height="942" loading="lazy" alt="Cargo bikes and small electric vehicles used by DHL, UPS, Amazon and others for last-mile delivery"></a>
+        <div class="corner-stores">
+          <a href="img/CornerStore_Coffee.jpg"><img src="img/CornerStore_Coffee.jpg" width="800" height="600" loading="lazy" alt="A corner coffee shop with people at sidewalk tables and on a bench"></a>
+          <a href="img/CornerStore_Brick.jpg"><img src="img/CornerStore_Brick.jpg" width="800" height="1422" loading="lazy" alt="A brick corner building with a shop at street level and people at sidewalk tables"></a>
+        </div>
       </div>
     </div>
 
@@ -801,6 +809,11 @@ footer .copyright { font-size: 0.85em; margin-top: 16px; }
         <p>Reduced parking demand converts low-tax parking lots to high-tax productive land (sales tax + property tax). Reduced vehicle trips extend pavement life and cut lane-mile maintenance costs. Only 1.2% of land in the 35 largest U.S. cities is walkable &mdash; yet that 1.2% generates 20% of GDP. More walkable land = more GDP per acre.</p>
       </div>
     </div>
+
+    <figure class="figure" style="max-width:520px;margin-left:auto;margin-right:auto">
+      <a href="img/DHL_UPS-FedEx_CargoBike.jpg"><img src="img/DHL_UPS-FedEx_CargoBike.jpg" width="932" height="942" loading="lazy" alt="Cargo bikes and small electric vehicles used by DHL, UPS, Amazon and others for last-mile delivery"></a>
+      <figcaption>Carriers already deliver the last mile by cargo bike. JPods brings the parcels to them.</figcaption>
+    </figure>
 
     <table class="comp-table">
       <thead>
