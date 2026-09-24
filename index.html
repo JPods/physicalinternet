@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Physical Internet® — Moving Atoms Like We Move Bits</title>
-<meta name="description" content="The Physical Internet® applies packet-switching to physical movement. Three layers: heavy lift, middle mile, last mile. Solar-powered guideways as distributed energy infrastructure.">
+<title>Physical Internet® — Give the Street Back to People</title>
+<meta name="description" content="The Physical Internet® applies packet-switching to physical movement. Three layers: high speed (freight rail and airplanes), middle mile (JPods), last mile (safe to walk and bike). Solar-powered guideways as distributed energy infrastructure.">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -59,6 +59,7 @@ section h2 {
   font-size: 1.8em;
   font-weight: 400;
   color: #0a2a1a;
+  line-height: 1.25;
   margin-bottom: 16px;
 }
 section h2 span { color: #16a34a; }
@@ -266,9 +267,79 @@ footer .footer-tagline { color: #fff; font-size: 1.1em; margin-bottom: 16px; }
 footer .footer-links a { color: #4ade80; margin: 0 12px; font-size: 0.95em; }
 footer .copyright { font-size: 0.85em; margin-top: 16px; }
 
+/* ── Scene hero ── */
+.scene-hero {
+  background: #cfe9f7;
+  color: #0a2a1a;
+  text-align: center;
+  padding: 64px 0 0;
+}
+.scene-hero .eyebrow {
+  font-size: 0.8em; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; color: #15803d; margin-bottom: 12px;
+}
+.scene-hero h1 {
+  font-size: 3.2em; font-weight: 700; line-height: 1.1;
+  letter-spacing: -1px; margin-bottom: 18px;
+}
+.scene-hero .tagline {
+  font-size: 1.2em; color: #24433a; max-width: 700px; margin: 0 auto 32px;
+}
+.scene-hero svg { display: block; width: 100%; height: auto; }
+
+/* ── Layer rows ── */
+.layer-rows { display: flex; flex-direction: column; gap: 20px; margin: 32px 0; }
+.layer-row {
+  display: grid; grid-template-columns: 1fr 1.15fr; gap: 24px; align-items: center;
+  background: #fff; border-radius: 12px; padding: 24px;
+  border-left: 8px solid var(--band);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+.layer-row .tag {
+  display: inline-block; font-size: 0.72em; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; color: #fff; background: var(--band);
+  padding: 3px 10px; border-radius: 4px; margin-bottom: 8px;
+}
+.layer-row h3 { font-size: 1.35em; color: #0a2a1a; margin-bottom: 2px; }
+.layer-row .analog { font-size: 0.85em; color: #6a6a7a; margin-bottom: 10px; }
+.layer-row p { font-size: 0.95em; line-height: 1.6; }
+.layer-row img { width: 100%; height: auto; max-height: 380px; object-fit: cover; border-radius: 8px; display: block; }
+.band-high { --band: #1e293b; }
+.band-mid  { --band: #16a34a; }
+.band-last { --band: #d97706; }
+
+/* ── Full-width figures ── */
+.figure { margin: 28px 0; }
+.figure a { display: block; }
+.figure img {
+  width: 100%; height: auto; display: block; border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+}
+.figure figcaption { font-size: 0.85em; color: #6a6a7a; margin-top: 10px; font-style: italic; }
+.wide { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+.big-line {
+  font-family: Georgia, serif; font-size: 1.9em; line-height: 1.25;
+  color: #0a2a1a; margin: 8px 0 20px;
+}
+.big-line em { color: #16a34a; font-style: normal; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 24px 0; }
+.dark-section { background: #111c16; color: #d8e0da; }
+.dark-section h2 { color: #fff; }
+.dark-section h2 span { color: #f87171; }
+.dark-section p.lead { color: #b8c4bc; }
+.dark-section .big-line { color: #fff; }
+.dark-section .figure figcaption { color: #8a9a90; }
+
 /* ── Responsive ── */
 @media (max-width: 700px) {
   .hero h1 { font-size: 2.2em; }
+  .scene-hero { padding-top: 44px; }
+  .scene-hero h1 { font-size: 2.2em; }
+  .scene-hero .tagline { font-size: 1.05em; padding: 0 16px; }
+  .layer-row { grid-template-columns: 1fr; padding: 18px; }
+  .pair { grid-template-columns: 1fr; }
+  .big-line { font-size: 1.45em; }
+  .container, .wide { padding: 0 16px; }
   .layers { grid-template-columns: 1fr; }
   .parallel { grid-template-columns: 1fr; }
   .catalyst { grid-template-columns: repeat(3, 1fr); }
@@ -280,46 +351,267 @@ footer .copyright { font-size: 0.85em; margin-top: 16px; }
 </head>
 <body>
 
-<!-- ════════ HERO ════════ -->
-<header class="hero">
+<!-- ════════ HERO — the three layers in one street ════════ -->
+<header class="scene-hero">
   <div class="container">
-    <h1>The Physical <span>Internet</span></h1>
-    <p class="tagline">The internet moves bits in small packets, on demand, to any address. The Physical Internet&reg; moves atoms the same way &mdash; solar-powered, on demand, 500&thinsp;kg at a time.</p>
-    <div class="hero-stat">78 Wh vs 1,032 Wh</div>
-    <p class="hero-stat-desc">JPods per passenger-mile vs personal car per passenger-mile</p>
+    <div class="eyebrow">The Physical Internet&reg;</div>
+    <h1>Give the street back to people.</h1>
+    <p class="tagline">Heavy loads ride the rails. Fast trips take the air. Everything in between rides overhead, in solar-powered JPods. The street goes back to walking and biking.</p>
   </div>
+  <svg viewBox="0 0 1200 560" role="img" aria-labelledby="scene-title scene-desc" preserveAspectRatio="xMidYMax meet">
+    <title id="scene-title">The three layers of the Physical Internet</title>
+    <desc id="scene-desc">An airplane crosses the sky and a freight train crosses the horizon: the high-speed layer. Solar-powered JPods pods hang from a slim elevated guideway: the middle mile. Below, people walk and bike on a street lined with trees and shops: the last mile.</desc>
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#cfe9f7"/>
+        <stop offset="0.75" stop-color="#eef7ec"/>
+      </linearGradient>
+      <linearGradient id="trail" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+        <stop offset="1" stop-color="#fff" stop-opacity="0.95"/>
+      </linearGradient>
+      <pattern id="win" width="22" height="30" patternUnits="userSpaceOnUse">
+        <rect x="6" y="8" width="10" height="14" rx="1" fill="#6b8ba0" opacity="0.55"/>
+      </pattern>
+      <pattern id="cells" width="40" height="20" patternUnits="userSpaceOnUse">
+        <rect width="40" height="20" fill="#1f3b63"/>
+        <path d="M40 0V20M0 10H40" stroke="#4d6f99" stroke-width="1.2"/>
+      </pattern>
+      <g id="walker" fill="currentColor" stroke="currentColor" stroke-linecap="round">
+        <circle cx="0" cy="-50" r="6" stroke="none"/>
+        <path d="M-5 -42h10l2 22h-14z" stroke="none"/>
+        <path d="M-3 -21l-7 21M3 -21l6 21M-5 -40l-6 15M5 -40l6 14" stroke-width="4" fill="none"/>
+      </g>
+      <g id="cyclist" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="-16" cy="-10" r="10" stroke="#334155" stroke-width="2.5"/>
+        <circle cx="17" cy="-10" r="10" stroke="#334155" stroke-width="2.5"/>
+        <path d="M-16 -10h14l12 -15l7 15M-2 -10l-5 -16M10 -25l-2 -5" stroke="#334155" stroke-width="2.5"/>
+        <path d="M-7 -28l12 -18M6 -44l6 16M-7 -28l6 12l-3 6" stroke-width="4.5"/>
+        <circle cx="8" cy="-52" r="6" fill="currentColor" stroke="none"/>
+      </g>
+    </defs>
+
+    <!-- sky, sun -->
+    <rect width="1200" height="500" fill="url(#sky)"/>
+    <circle cx="1010" cy="110" r="52" fill="#fff4c7"/>
+
+    <!-- HIGH SPEED: airplane -->
+    <rect x="-40" y="93" width="310" height="4" rx="2" fill="url(#trail)"/>
+    <g transform="translate(330 95)" fill="#475569">
+      <path d="M-60 -3L48 -5Q68 0 48 5L-60 3Z"/>
+      <path d="M2 -2L-20 -34h11L22 -2Z"/>
+      <path d="M2 2L-20 34h11L22 2Z"/>
+      <path d="M-54 -2L-66 -20h9L-44 -2Z"/>
+    </g>
+
+    <!-- far hills + HIGH SPEED: freight train -->
+    <path d="M0 395C150 360 300 372 450 388C600 404 700 370 860 380C1000 390 1100 372 1200 382V500H0Z" fill="#bddfb3"/>
+    <path d="M20 392H660" stroke="#6b7c63" stroke-width="2"/>
+    <g>
+      <rect x="60"  y="376" width="34" height="14" fill="#9a3412"/>
+      <rect x="97"  y="376" width="34" height="14" fill="#475569"/>
+      <rect x="134" y="376" width="34" height="14" fill="#b45309"/>
+      <rect x="171" y="376" width="34" height="14" fill="#334155"/>
+      <rect x="208" y="376" width="34" height="14" fill="#7c2d12"/>
+      <rect x="245" y="376" width="34" height="14" fill="#475569"/>
+      <rect x="282" y="376" width="34" height="14" fill="#9a3412"/>
+      <rect x="319" y="376" width="34" height="14" fill="#b45309"/>
+      <rect x="356" y="376" width="34" height="14" fill="#334155"/>
+      <rect x="393" y="376" width="34" height="14" fill="#7c2d12"/>
+      <rect x="430" y="376" width="34" height="14" fill="#475569"/>
+      <rect x="467" y="376" width="34" height="14" fill="#9a3412"/>
+      <path d="M506 390V374h30l10 6v10Z" fill="#1e293b"/>
+    </g>
+    <path d="M0 432C300 415 600 442 1200 424V500H0Z" fill="#a3d094"/>
+
+    <!-- buildings along the street -->
+    <g>
+      <rect x="680"  y="330" width="110" height="170" fill="#e8d5c0"/>
+      <rect x="790"  y="292" width="90"  height="208" fill="#d9b99b"/>
+      <rect x="880"  y="320" width="120" height="180" fill="#efe2cf"/>
+      <rect x="1000" y="272" width="95"  height="228" fill="#cfa98a"/>
+      <rect x="1095" y="310" width="105" height="190" fill="#e6cfb5"/>
+      <rect x="684"  y="345" width="102" height="92" fill="url(#win)"/>
+      <rect x="794"  y="305" width="82"  height="132" fill="url(#win)"/>
+      <rect x="884"  y="335" width="112" height="102" fill="url(#win)"/>
+      <rect x="1004" y="285" width="87"  height="152" fill="url(#win)"/>
+      <rect x="1099" y="325" width="97"  height="112" fill="url(#win)"/>
+      <!-- storefronts -->
+      <rect x="690"  y="456" width="90"  height="40" fill="#5b7d8c" opacity="0.6"/>
+      <rect x="798"  y="456" width="74"  height="40" fill="#5b7d8c" opacity="0.6"/>
+      <rect x="890"  y="456" width="100" height="40" fill="#5b7d8c" opacity="0.6"/>
+      <rect x="1008" y="456" width="79"  height="40" fill="#5b7d8c" opacity="0.6"/>
+      <rect x="1103" y="456" width="89"  height="40" fill="#5b7d8c" opacity="0.6"/>
+      <path d="M684 442h102l-6 14h-90z" fill="#16a34a"/>
+      <path d="M794 442h82l-6 14h-70z" fill="#d97706"/>
+      <path d="M884 442h112l-6 14h-100z" fill="#0f766e"/>
+      <path d="M1004 442h87l-6 14h-75z" fill="#be185d"/>
+      <path d="M1099 442h97l-6 14h-85z" fill="#16a34a"/>
+    </g>
+
+    <!-- trees -->
+    <g>
+      <rect x="56"  y="440" width="8" height="60" fill="#6b4f3a"/>
+      <rect x="196" y="436" width="8" height="64" fill="#6b4f3a"/>
+      <rect x="346" y="444" width="8" height="56" fill="#6b4f3a"/>
+      <rect x="600" y="440" width="8" height="60" fill="#6b4f3a"/>
+      <circle cx="60"  cy="440" r="32" fill="#4d9a4f"/>
+      <circle cx="200" cy="434" r="36" fill="#5fae5a"/>
+      <circle cx="350" cy="444" r="30" fill="#4d9a4f"/>
+      <circle cx="604" cy="438" r="34" fill="#5fae5a"/>
+    </g>
+
+    <!-- MIDDLE MILE: solar guideway, columns, pods -->
+    <g>
+      <rect x="114"  y="254" width="12" height="246" fill="#cbd5e1"/>
+      <rect x="414"  y="254" width="12" height="246" fill="#cbd5e1"/>
+      <rect x="714"  y="254" width="12" height="246" fill="#cbd5e1"/>
+      <rect x="1014" y="254" width="12" height="246" fill="#cbd5e1"/>
+      <rect x="0" y="222" width="1200" height="20" fill="url(#cells)"/>
+      <rect x="0" y="242" width="1200" height="12" fill="#e5e7eb" stroke="#94a3b8" stroke-width="1"/>
+    </g>
+    <g>
+      <rect x="267" y="254" width="6" height="14" fill="#94a3b8"/>
+      <rect x="234" y="268" width="72" height="48" rx="16" fill="#22c55e"/>
+      <rect x="244" y="276" width="52" height="22" rx="8" fill="#e0f2fe"/>
+      <rect x="567" y="254" width="6" height="14" fill="#94a3b8"/>
+      <rect x="534" y="268" width="72" height="48" rx="16" fill="#facc15"/>
+      <rect x="544" y="276" width="52" height="22" rx="8" fill="#e0f2fe"/>
+      <rect x="877" y="254" width="6" height="14" fill="#94a3b8"/>
+      <rect x="844" y="268" width="72" height="48" rx="16" fill="#f97316"/>
+      <rect x="854" y="276" width="52" height="30" rx="6" fill="#fde7c7"/>
+      <rect x="860" y="288" width="16" height="16" fill="#a16207"/>
+      <rect x="880" y="284" width="20" height="20" fill="#ca8a04"/>
+      <rect x="1137" y="254" width="6" height="14" fill="#94a3b8"/>
+      <rect x="1104" y="268" width="72" height="48" rx="16" fill="#14b8a6"/>
+      <rect x="1114" y="276" width="52" height="22" rx="8" fill="#e0f2fe"/>
+    </g>
+
+    <!-- LAST MILE: the street belongs to people -->
+    <rect x="0" y="500" width="1200" height="60" fill="#e7dfd3"/>
+    <path d="M0 500H1200" stroke="#cfc4b4" stroke-width="3"/>
+    <use href="#walker"  transform="translate(88 548)"  style="color:#7c3aed"/>
+    <use href="#walker"  transform="translate(112 548)" style="color:#0f766e"/>
+    <use href="#cyclist" transform="translate(220 548)" style="color:#b45309"/>
+    <use href="#walker"  transform="translate(318 548)" style="color:#be185d"/>
+    <use href="#walker"  transform="translate(340 548) scale(0.68)" style="color:#d97706"/>
+    <use href="#cyclist" transform="translate(800 548)" style="color:#0f766e"/>
+    <g>
+      <path d="M912 470h60l-30 -14z" fill="#16a34a"/>
+      <rect x="941" y="470" width="2" height="60" fill="#475569"/>
+      <rect x="926" y="512" width="32" height="4" fill="#475569"/>
+    </g>
+    <use href="#walker"  transform="translate(912 548)" style="color:#334155"/>
+    <use href="#walker"  transform="translate(972 548)" style="color:#be185d"/>
+    <use href="#walker"  transform="translate(1054 548)" style="color:#7c3aed"/>
+    <use href="#cyclist" transform="translate(1136 548)" style="color:#d97706"/>
+
+    <!-- layer labels -->
+    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" letter-spacing="2" fill="#fff" text-anchor="middle">
+      <rect x="430" y="77" width="440" height="36" rx="18" fill="#1e293b"/>
+      <text x="650" y="101">HIGH SPEED · AIR &amp; FREIGHT RAIL</text>
+      <rect x="30" y="170" width="290" height="36" rx="18" fill="#16a34a"/>
+      <text x="175" y="194">MIDDLE MILE · JPODS</text>
+      <rect x="398" y="512" width="340" height="36" rx="18" fill="#d97706"/>
+      <text x="568" y="536">LAST MILE · WALK &amp; BIKE</text>
+    </g>
+  </svg>
 </header>
 
 <!-- ════════ THREE LAYERS ════════ -->
 <section>
   <div class="container">
-    <h2>Three <span>Layers</span></h2>
-    <p class="lead">The internet has three layers. The Physical Internet&reg; has the same three &mdash; moving mass instead of data.</p>
+    <h2>Three <span>Layers</span>, each doing what it does best</h2>
+    <p class="lead">The internet has three layers: fiber for the backbone, WiFi for the neighborhood, Bluetooth for the last few feet. The Physical Internet&reg; has the same three, moving mass instead of data. The trouble today is that one layer, 2-ton cars and trucks on the street, is forced to do all three jobs badly.</p>
 
-    <div class="layers">
-      <div class="layer layer-fiber">
-        <div class="layer-icon">&#128752;</div>
-        <h3>Heavy Lift</h3>
-        <div class="layer-internet">Internet: Satellite &amp; Fiber</div>
-        <p>Airlines. Freight railroads (476 ton-miles per gallon). Tube networks. Long distance, high volume, point-to-point. The backbone.</p>
+    <div class="layer-rows">
+      <div class="layer-row band-high">
+        <div>
+          <span class="tag">High Speed</span>
+          <h3>Freight rail and airplanes</h3>
+          <div class="analog">Internet: fiber &amp; satellite backbone</div>
+          <p><strong>Freight railroads are the heavy lift</strong>: 476 ton-miles per gallon, 188 times more efficient than cars. <strong>Airplanes are the high speed</strong>: people and urgent cargo between cities. Beyond a few hundred miles, freight is already shifting to rail. The backbone exists; it just needs the right connections at each end.</p>
+        </div>
+        <a href="img/Share_ByMilesTraveled_Cargo_2024-03-31.jpg"><img src="img/Share_ByMilesTraveled_Cargo_2024-03-31.jpg" width="1600" height="900" loading="lazy" alt="Share of trips by distance for people and cargo; freight ton-miles shift from truck to railroads as distance increases"></a>
       </div>
-      <div class="layer layer-wifi">
-        <div class="layer-icon">&#9881;</div>
-        <h3>Middle Mile</h3>
-        <div class="layer-internet">Internet: WiFi</div>
-        <p>JPods. Glydways. Solar-powered guideways above the streets. Station to station, neighborhood to neighborhood. 500&thinsp;kg pods on demand. <strong>This is where the Physical Internet&reg; is built.</strong></p>
+
+      <div class="layer-row band-mid">
+        <div>
+          <span class="tag">Middle Mile</span>
+          <h3>JPods</h3>
+          <div class="analog">Internet: WiFi</div>
+          <p>Solar-powered podcars on a mesh of slim guideways above the street. Station to station, neighborhood to neighborhood. People and cargo up to 500&thinsp;kg, on demand, 24&times;7, whatever your age, ability, or wealth. Piers about 1&thinsp;m&sup2; every 30&thinsp;m: <strong>it crosses the city without dividing it.</strong> <strong>This is where the Physical Internet&reg; is built.</strong></p>
+        </div>
+        <a href="img/PhysicalInternet_MatrixNetwork.jpg"><img src="img/PhysicalInternet_MatrixNetwork.jpg" width="900" height="506" loading="lazy" alt="Matrix network map, podcar carrying people and a bike, elevated JPods guideway, and last-mile modes: bikes, scooters, local use vehicles"></a>
       </div>
-      <div class="layer layer-bt">
-        <div class="layer-icon">&#128694;</div>
-        <h3>Last Mile</h3>
-        <div class="layer-internet">Internet: Bluetooth</div>
-        <p>Walking. Bikes. Scooters. Uber. Golf carts. Proximity itself. When Middle Mile stations are close enough, the last mile disappears. 7 minutes by bike, 15 minutes walking.</p>
+
+      <div class="layer-row band-last">
+        <div>
+          <span class="tag">Last Mile</span>
+          <h3>Safe to walk and bike</h3>
+          <div class="analog">Internet: Bluetooth</div>
+          <p>Walking, bikes, cargo bikes, scooters, local use vehicles. When stations are a 7-minute bike ride or a 15-minute walk away, and 2-ton vehicles are no longer on the street, the last mile is safe again. Parcels arrive at a neighborhood station and go the last few blocks by cargo bike.</p>
+        </div>
+        <a href="img/DHL_UPS-FedEx_CargoBike.jpg"><img src="img/DHL_UPS-FedEx_CargoBike.jpg" width="932" height="942" loading="lazy" alt="Cargo bikes and small electric vehicles used by DHL, UPS, Amazon and others for last-mile delivery"></a>
       </div>
     </div>
 
     <div class="quote-block">
-      <p>The internet won because it routes small packets dynamically instead of dedicating circuits. Highways are circuit-switched &mdash; you dedicate a 2-ton vehicle to every trip. The Physical Internet&reg; is packet-switched &mdash; 500&thinsp;kg pods routed on demand. About 1 mile of JPods guideways per 14 miles of roads.</p>
+      <p>Commerce and community are pedestrian activities.</p>
     </div>
+  </div>
+</section>
+
+<!-- ════════ WHERE THE TRIPS ARE ════════ -->
+<section>
+  <div class="container">
+    <h2>Where the <span>Trips</span> Are</h2>
+    <p class="big-line">Most trips are short. <em>80% of trips could shift from cars.</em></p>
+    <p class="lead">More than half of all trips are under 3 miles, and 28% are under 1 mile. Those trips belong to walking, biking, and the middle mile. In North America 92% of trips go by car; in Western Europe it is 43%, with 34% by walking and biking. Moving a person costs $0.38 a passenger-mile by car and $0.03 by JPods.</p>
+  </div>
+  <div class="wide">
+    <figure class="figure">
+      <a href="img/ShareOfTripsByMile_cost_snelling.jpg"><img src="img/ShareOfTripsByMile_cost_snelling.jpg" width="1600" height="475" loading="lazy" alt="Share of trips by distance, cost and CO2 per passenger-mile by mode, and mode share North America vs Western Europe"></a>
+      <figcaption>Share of trips by distance (2021); cost per passenger-mile (MassDOT cost data, US DOE energy data); mode share, North America vs Western Europe.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ════════ WALKABILITY ════════ -->
+<section>
+  <div class="container">
+    <h2>Cargo needs transport. <span>People need walkability.</span></h2>
+    <p class="lead">Highways and rail lines move people through a place, but they divide it. A mesh overhead crosses without dividing and leaves the street below for people. People make friends, make money, and add value walking. Only 1.2% of land in the 35 largest U.S. cities is walkable, and that 1.2% produces 20% of GDP.</p>
+  </div>
+  <div class="wide">
+    <figure class="figure">
+      <a href="img/WalkableCity.jpg"><img src="img/WalkableCity.jpg" width="1536" height="1024" loading="lazy" alt="Highways and conventional rail divide neighborhoods; the JPods elevated mesh moves people and goods over the city while keeping walkable streets below"></a>
+    </figure>
+  </div>
+</section>
+
+<!-- ════════ THE COST OF THE WRONG LAYER ════════ -->
+<section class="dark-section">
+  <div class="container">
+    <h2>The Cost of the <span>Wrong Layer</span></h2>
+    <p class="big-line">When 2-ton vehicles do the middle mile on the street, the street stops being a place.</p>
+    <p class="lead">Delivery trucks double-park and unload across the sidewalk. Cars sit idling in traffic. Children can't walk to school. For each kilometer walked, an American pedestrian is about ten times as likely to be killed as a Dutch one (11.2 vs 1.1 deaths per 100 million km, 2016&ndash;2018). This follows from policy. It is not an accident of culture. Amsterdam's streets in 1971 looked like ours. The chart below shows the same Amsterdam street in 1971 and in 2020.</p>
+  </div>
+  <div class="wide">
+    <div class="pair">
+      <figure class="figure" style="margin:0">
+        <a href="img/FedExPackagesOverStreetNYC.jpg"><img src="img/FedExPackagesOverStreetNYC.jpg" width="1400" height="933" loading="lazy" alt="Parcels unloaded across a New York City street from a delivery truck"></a>
+        <figcaption>The middle mile today: a New York street used as a sorting floor.</figcaption>
+      </figure>
+      <figure class="figure" style="margin:0">
+        <a href="img/TruckLoading_IdleUnloadStreet.jpg"><img src="img/TruckLoading_IdleUnloadStreet.jpg" width="900" height="307" loading="lazy" alt="A truck unloading pallets on a city street compared with a forklift loading a pallet at a dock"></a>
+        <figcaption>Pallets unloaded in the street, versus at a dock where they belong.</figcaption>
+      </figure>
+    </div>
+    <figure class="figure">
+      <a href="img/Deaths_PerCapitaOil_US_Sweden_Denmark-CityStreet_1971_2020.jpg"><img src="img/Deaths_PerCapitaOil_US_Sweden_Denmark-CityStreet_1971_2020.jpg" width="1600" height="918" loading="lazy" alt="Per capita oil use US vs Sweden and Denmark; US oil production, imports and debt; Amsterdam street 1971 vs 2020; pedestrian and cyclist fatality rates US vs Europe"></a>
+      <figcaption>Oil use per capita, oil imports and debt, one Amsterdam street in 1971 and 2020, and pedestrian and cyclist fatality rates. Fatality data: Buehler &amp; Pucher, <em>Transport Reviews</em> 41(1), 2021, via Streetsblog.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -472,6 +764,11 @@ footer .copyright { font-size: 0.85em; margin-top: 16px; }
         <p>Waste streamed continuously out of the city, sorted fresh on arrival. Items that go to landfill today because they are too degraded to identify or separate become recoverable when sorted fresh and continuously. Recycling rates rise dramatically when waste isn't rotted, compressed, and mixed in a weekly truck.</p>
       </div>
     </div>
+
+    <figure class="figure">
+      <a href="img/CargoPod-2PalletsTruckLoading.jpg"><img src="img/CargoPod-2PalletsTruckLoading.jpg" width="1200" height="435" loading="lazy" alt="A JPods cargo pod carrying two pallets, next to a forklift loading a pallet at a dock"></a>
+      <figcaption>A cargo pod carries two pallets, loaded at the dock the way pallets already move today.</figcaption>
+    </figure>
 
     <div class="parallel" style="margin-top:16px;">
       <div class="card card-dark">
