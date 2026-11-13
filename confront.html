@@ -232,6 +232,8 @@ footer .copyright { font-size: 0.85em; margin-top: 16px; }
   .cta-links { flex-direction: column; align-items: center; }
   .hero .hero-stats { gap: 24px; }
 }
+  /* Off-site links open in a new tab and say so */
+  a[target="_blank"]::after { content: "\00a0\2197"; font-size: 0.8em; opacity: 0.7; }
 </style>
 </head>
 <body>
@@ -287,7 +289,7 @@ footer .copyright { font-size: 0.85em; margin-top: 16px; }
       <div class="step-card">
         <div class="step-num">1</div>
         <h4>Map the Crashes</h4>
-        <p>Open <a href="https://meshmobility.com">MeshMobility</a>. Find your city. Turn on crash overlays. See where people are dying.</p>
+        <p>Open <a href="https://meshmobility.com" target="_blank" rel="noopener">MeshMobility</a>. Find your city. Turn on crash overlays. See where people are dying.</p>
       </div>
       <div class="step-card">
         <div class="step-num">2</div>
@@ -297,7 +299,7 @@ footer .copyright { font-size: 0.85em; margin-top: 16px; }
       <div class="step-card">
         <div class="step-num">3</div>
         <h4>Run the Numbers</h4>
-        <p>Open <a href="https://personalizetransit.com">Personalize Transit</a>. Enter your city. Get the investment cost, annual savings, and CO&sup2; reduction.</p>
+        <p>Open <a href="https://personalizetransit.com" target="_blank" rel="noopener">Personalize Transit</a>. Enter your city. Get the investment cost, annual savings, and CO&sup2; reduction.</p>
       </div>
       <div class="step-card">
         <div class="step-num">4</div>
@@ -409,9 +411,9 @@ Please let us know if you are interested.
     <h2>Build Your City's <span style="color: #ef4444;">Case</span></h2>
     <p class="lead">Use the tools. Map the crashes. Design the network. Run the numbers. Send the email. The data does the confronting.</p>
     <div class="cta-links">
-      <a href="https://meshmobility.com" class="btn-primary">Map Your City's Crashes</a>
-      <a href="https://personalizetransit.com" class="btn-secondary">Run the Numbers</a>
-      <a href="https://primelawofnetworks.com" class="btn-secondary">Why Networks Win</a>
+      <a href="https://meshmobility.com" class="btn-primary" target="_blank" rel="noopener">Map Your City's Crashes</a>
+      <a href="https://personalizetransit.com" class="btn-secondary" target="_blank" rel="noopener">Run the Numbers</a>
+      <a href="https://primelawofnetworks.com" class="btn-secondary" target="_blank" rel="noopener">Why Networks Win</a>
     </div>
   </div>
 </section>
@@ -421,13 +423,13 @@ Please let us know if you are interested.
   <div class="container">
     <div class="footer-tagline">Stop the roadkill. Build the network. Fund it privately.</div>
     <div class="footer-links">
-      <a href="https://jpods.com">JPods</a>
+      <a href="https://jpods.com" target="_blank" rel="noopener">JPods</a>
       <a href="https://physicalinternet.com">Physical Internet</a>
-      <a href="https://personalizetransit.com">Personalize Transit</a>
-      <a href="https://jpods3d.com">JPods3D</a>
-      <a href="https://primelawofnetworks.com">Prime Law</a>
-      <a href="https://meshmobility.com">MeshMobility</a>
-      <a href="https://10xmakers.com">10xMakers</a>
+      <a href="https://personalizetransit.com" target="_blank" rel="noopener">Personalize Transit</a>
+      <a href="https://jpods3d.com" target="_blank" rel="noopener">JPods3D</a>
+      <a href="https://primelawofnetworks.com" target="_blank" rel="noopener">Prime Law</a>
+      <a href="https://meshmobility.com" target="_blank" rel="noopener">MeshMobility</a>
+      <a href="https://10xmakers.com" target="_blank" rel="noopener">10xMakers</a>
     </div>
     <div class="copyright">&copy; 2026 JPods, LLC. Solar-powered mobility, locally governed.</div>
   </div>
