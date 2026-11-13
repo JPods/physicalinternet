@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MeshMobility — Physical Internet®</title>
+<meta name="description" content="MeshMobility: free software to design the Middle Mile of the Physical Internet for your city. Worked example: Tulsa, Oklahoma.">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<nav class="topnav" aria-label="Site">
+  <div class="inner">
+    <a class="brand" href="index.html">Physical <span>Internet</span>&reg;</a>
+    <div class="links">
+      <a href="index.html">Three Layers</a>
+      <a href="metrics.html">Metrics</a>
+      <a href="landuse.html">Land Use</a>
+      <a href="meshmobility.html" aria-current="page">MeshMobility</a>
+      <a href="personalizetransit.html">Personalize Transit</a>
+      <a href="https://primelawofnetworks.com">Prime Law of Networks</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="eyebrow">Physical Internet&reg; &middot; MeshMobility</div>
+    <h1>Draw the Middle Mile for your city.</h1>
+    <p>MeshMobility is free software that lays a JPods network on a real map of your city, puts real data under it,
+      and shows how far people can travel door to door: walk to a station, ride, walk to the destination.</p>
+  </div>
+</header>
+
+<!-- ════════ WHAT IT DOES ════════ -->
+<section>
+  <div class="container">
+    <h2>Four <span>Steps</span></h2>
+    <p class="lead">From a city name to a network you can measure.</p>
+    <div class="steps4">
+      <div class="card card-light"><h3>1 &middot; Find your city</h3><p>One click fits a complete network to the city boundary, aligned to the street grid.</p></div>
+      <div class="card card-light"><h3>2 &middot; Overlay the data</h3><p>Traffic counts, fatal and all crashes, population, property values and jobs, on the map.</p></div>
+      <div class="card card-light"><h3>3 &middot; Design</h3><p>Place stations and circles, connect guideways, route around obstacles with waypoints.</p></div>
+      <div class="card card-light"><h3>4 &middot; Measure</h3><p>Isochrones show walk&ndash;ride&ndash;walk time from any point. The simulator runs pods through the network.</p></div>
+    </div>
+    <div class="notice"><b>Outside the United States?</b> The linked data sets (crash, traffic and census overlays) cover US cities only.
+      You can still design a network anywhere; fill in the data for your area.</div>
+  </div>
+</section>
+
+<!-- ════════ TULSA: ISOCHRONES ════════ -->
+<section id="tulsa">
+  <div class="container">
+    <h2>Worked Example: <span>Tulsa, Oklahoma</span></h2>
+    <p class="big-line">349 stations, 267.8 miles of guideway. <em>267.8 MW of solar.</em></p>
+    <p class="lead">116 circles and 17,242 columns. Each isochrone below is timed door to door from one point.
+      <span class="iso-legend">
+        <span><i style="background:#22c55e"></i>5 min</span>
+        <span><i style="background:#3b82f6"></i>10 min</span>
+        <span><i style="background:#eab308"></i>20 min</span>
+        <span><i style="background:#ef4444"></i>30 min</span>
+      </span>
+    </p>
+  </div>
+  <div class="wide">
+    <figure class="stage"><img alt=""><figcaption></figcaption></figure>
+    <div class="shots">
+      <figure class="shot"><img src="img/mm/iso-cbd.jpg" alt="Isochrone from Tulsa's Central Business District" loading="lazy">
+        <figcaption><b>Central Business District</b><span>From downtown, the rings show how much of Tulsa is within 5, 10, 20 and 30 minutes.</span></figcaption></figure>
+      <figure class="shot"><img src="img/mm/iso-expo.jpg" alt="Isochrone from the Tulsa Expo Center" loading="lazy">
+        <figcaption><b>Expo Center</b><span>The same network timed from the fairgrounds. An event crowd leaves on the network, not in a parking lot.</span></figcaption></figure>
+      <figure class="shot"><img src="img/mm/iso-71st.jpg" alt="Isochrone from 71st Street" loading="lazy">
+        <figcaption><b>71st Street</b><span>A dense crash area. Timed from where people are being hurt.</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ TULSA: THE TOOL ════════ -->
+<section>
+  <div class="container">
+    <h2>The <span>Tool</span></h2>
+    <p class="lead">Real data on the map, every assumption in the open, and the tools to change the design.</p>
+  </div>
+  <div class="wide">
+    <figure class="stage"><img alt=""><figcaption></figcaption></figure>
+    <div class="shots">
+      <figure class="shot"><img src="img/mm/overlay-fatal.jpg" alt="Fatal crash overlay on the Tulsa network" loading="lazy">
+        <figcaption><b>Overlay: fatal crashes</b><span>Fatal crashes plotted under the network. Traffic counts, all crashes, population, property values and jobs are one click away.</span></figcaption></figure>
+      <figure class="shot"><img src="img/mm/settings.jpg" alt="Simulation settings panel" loading="lazy">
+        <figcaption><b>Settings</b><span>Speed, acceleration, pods per station and station timing. Change an assumption and run the simulation again.</span></figcaption></figure>
+      <figure class="shot"><img src="img/mm/tools.jpg" alt="Design tools panel" loading="lazy">
+        <figcaption><b>Tools</b><span>Place stations and circles, connect guideways, route around obstacles with waypoints, or auto-connect the mesh.</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Design Your City</h2>
+    <p class="lead">Free and open to everyone. Start with the numbers, then draw the network.</p>
+    <div class="cta-links">
+      <a href="https://meshmobility.com/app" class="btn-primary">Launch MeshMobility</a>
+      <a href="personalizetransit.html" class="btn-secondary">Personalize Transit</a>
+      <a href="https://meshmobility.com" class="btn-secondary">MeshMobility.com</a>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <button class="lb-prev" aria-label="Previous">&#8249;</button>
+  <img alt="">
+  <div class="lb-cap"></div>
+  <button class="lb-next" aria-label="Next">&#8250;</button>
+</div>
+<script src="viewer.js"></script>
+
+<!-- ════════ FOOTER ════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-tagline">Physical Internet&reg; &mdash; Moving atoms like we move bits.</div>
+    <div class="footer-links">
+      <a href="https://jpods.com">JPods</a>
+      <a href="https://virtual-inventory.com">Virtual Inventory</a>
+      <a href="https://webclerk.com">WebClerk</a>
+      <a href="https://personalizetransit.com">Personalize Transit</a>
+      <a href="https://jpods3d.com">JPods3D</a>
+      <a href="https://primelawofnetworks.com">Prime Law</a>
+      <a href="https://10xmakers.com">10xMakers</a>
+      <a href="https://meshmobility.com">MeshMobility</a>
+      <a href="https://dividedsovereignty.com">Divided Sovereignty</a>
+    </div>
+    <div class="copyright">&copy; 2026 JPods, LLC. Solar-powered mobility, locally governed.</div>
+  </div>
+</footer>
+
+</body>
+</html>
